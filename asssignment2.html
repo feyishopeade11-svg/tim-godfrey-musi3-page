@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Playlist</title>
+
+    <style>
+        .playlist {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .song img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .song p {
+            margin-top: 8px;
+        }
+        .song {
+            cursor: pointer;
+        }
+        .playlist-h1 {
+            color: green;
+        }
+
+        body {
+            background-color: #242424;
+            color: white;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            gap: 30px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            
+        }
+
+        .navbar ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            font-size: large;
+            gap: 90px;
+            list-style: none;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .navbar li {
+            list-style: none;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            background: none;
+            border: none;
+            padding: 0;
+        }
+        .ytube-vid {
+            display: inline-block;
+        }
+        .playlist-ol {
+            display: inline-block;
+            vertical-align: top;
+            background-color: rgb(61, 60, 60);
+            width: 700px;
+            height: 500px;
+            margin-left: 40px;
+            border-radius: 20px;
+            box-sizing: border-box;
+        }
+        .playlist-ol-li {
+            margin-bottom: 12px;
+            font-size: 16px;
+            padding: 20px;
+            line-height: 1.5;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="playlist-h1">My Playlist</h1>
+    <div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="playlists.html">Playlists</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="playlist">
+
+        <div class="song">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYNCGMQ6vwmwiCrTSnSjadMRshOqjVuOdA4V_77FYajw&s=10" alt="track thumbnail one">
+            <p>Track One</p>
+        </div>
+
+        <div class="song">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcTmZYO6fvEkfk1wrEVHW-K4g1O3t5ivWeGVAChTABzg&s=10" alt="track thumbnail two">
+            <p>Track Two</p>
+        </div>
+
+        <div class="song">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxOs1meqVMWpMtniyBamoL0YUlPdbUaeTnpTzq9iQ_7A&s=10" alt="track thumbnail three">
+            <p>Track Three</p>
+        </div>
+
+        <div class="song">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLj4FTX4b-8VfhvzvEfuqxyzwZxNPSCbk3gaYpMYAMbA&s=10" alt="track thumbnail four">
+            <p>Track Four</p>
+        </div>
+
+        <div class="song">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR61eIy4PbJjwfcFdXFl3L1QuIjYqZqoBbxuPQJ_8N4GA&s=10" alt="track thumbnail five">
+            <p>Track Five</p>
+        </div>
+
+        <div class="song">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg15c5sOqF4AUyDE7AfEV9J5Mk5WfudncssTeK2sJsdg&s=10" alt="track thumbnail six">
+            <p>Track Six</p>
+        </div>
+
+    </div>
+    <div>
+        <div class="ytube-vid">
+            <iframe class="playlist-vid"
+                width="900" 
+                height="500"
+                src="https://www.youtube.com/embed/PufwbbSKGgk?si=b8bdyaBY9OJg92VX" 
+                title="YouTube video player" 
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
+        <div class="playlist-ol">
+            <ol>
+                <li class="playlist-ol-li">Nara &mdash; Tim Godfrey ft. Travis Greene</li>
+                <li class="playlist-ol-li">Na You Be God (Remix) &mdash; Tim Godfrey ft. IBK</li>
+                <li class="playlist-ol-li">Toya &mdash; Tim Godfrey ft. Israel Houghton</li>
+                <li class="playlist-ol-li">Big God &mdash; Tim Godfrey ft. Anderson</li>
+                <li class="playlist-ol-li">Evidence &mdash; Tim Godfrey ft. Moses Bliss</li>
+                <li class="playlist-ol-li">So Good &mdash; Tim Godfrey</li>
+            </ol>
+        </div>
+    </div>
+    <div>
+        <audio src="Na You Be God Ft. IBK.mp3" loop controls muted>
+        </audio>
+    </div>
+
+</body>
+</html>
